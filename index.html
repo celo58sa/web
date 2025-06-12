@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeniorCraft - Minecraft Sunucusu</title>
-    <meta name="description" content="ZeniorCraft MUTLU BİR OYUN İÇİN EN İYİSİ - En iyi trap pvp deneyimi için bize katıl! Aktif oyuncu topluluğu, güvenli oyun ortamı ve eğlenceli etkinlikler.">
-    
+    <meta name="description" content="ZeniorCraft Minecraft sunucusu - En iyi trap pvp deneyimi için bize katıl! Aktif oyuncu topluluğu, güvenli oyun ortamı ve eğlenceli etkinlikler.">
+
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="ZeniorCraft ">
-    <meta property="og:description" content="En iyi Minecraft deneyimi için ZeniorCraft'a katıl! TRAP PVP, ekonomi, klanlar ve daha fazla özellik.">
+    <meta property="og:title" content="ZeniorCraft - Minecraft Sunucusu">
+    <meta property="og:description" content="En iyi Minecraft deneyimi için ZeniorCraft'a katıl! Survival, ekonomi, klanlar ve daha fazla özellik.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zeniorcraft.xyz">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --mc-green: #5c9c2b;
             --mc-dark-green: #4a7e23;
@@ -37,28 +37,28 @@
             --online: #00ff00;
             --offline: #ff0000;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: #111827;
             color: white;
             line-height: 1.6;
         }
-        
+
         .font-pixel {
             font-family: 'Press Start 2P', cursive;
         }
-        
+
         .font-mono {
             font-family: 'JetBrains Mono', monospace;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
         }
-        
+
         /* Header */
         .header {
             background-color: var(--mc-dark-green);
@@ -68,62 +68,62 @@
             z-index: 1000;
             transition: all 0.3s ease;
         }
-        
+
         .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             color: var(--mc-gold);
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
             transition: color 0.2s;
             cursor: pointer;
         }
-        
+
         .nav-links a:hover {
             color: var(--mc-gold);
         }
-        
+
         .server-status {
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
-        
+
         .status-indicator {
             width: 12px;
             height: 12px;
             border-radius: 50%;
             animation: pulse 2s infinite;
         }
-        
+
         .status-online {
             background-color: var(--online);
         }
-        
+
         .status-offline {
             background-color: var(--offline);
         }
-        
+
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
-        
+
         .mobile-menu {
             display: none;
             background: none;
@@ -132,7 +132,7 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -143,7 +143,7 @@
             text-align: center;
             padding: 2rem 0;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -158,26 +158,26 @@
                 rgba(139, 69, 19, 0.1) 70px
             );
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 10;
             max-width: 900px;
         }
-        
+
         .hero h1 {
             font-size: 3rem;
             color: var(--mc-gold);
             margin-bottom: 2rem;
             animation: pulse 2s infinite;
         }
-        
+
         .hero p {
             font-size: 1.25rem;
             color: #d1d5db;
             margin-bottom: 3rem;
         }
-        
+
         /* Cards */
         .card {
             background-color: #374151;
@@ -187,17 +187,17 @@
             box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
             transition: border-color 0.3s;
         }
-        
+
         .card:hover {
             border-color: var(--mc-gold);
         }
-        
+
         .server-ip-card {
             max-width: 400px;
             margin: 0 auto 3rem;
             text-align: center;
         }
-        
+
         .server-ip-display {
             background-color: #111827;
             padding: 1rem;
@@ -206,7 +206,7 @@
             margin: 1rem 0;
             font-size: 1.25rem;
         }
-        
+
         .btn {
             background-color: var(--mc-green);
             color: white;
@@ -221,16 +221,16 @@
             align-items: center;
             gap: 0.5rem;
         }
-        
+
         .btn:hover {
             background-color: var(--mc-dark-green);
         }
-        
+
         .btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
         }
-        
+
         /* Stats Grid */
         .stats-grid {
             display: grid;
@@ -238,7 +238,7 @@
             gap: 2rem;
             margin-bottom: 3rem;
         }
-        
+
         .stat-card {
             text-align: center;
             background-color: #374151;
@@ -247,56 +247,56 @@
             padding: 2rem;
             box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
         }
-        
+
         .stat-icon {
             font-size: 2rem;
             color: var(--mc-orange);
             margin-bottom: 1rem;
             display: block;
         }
-        
+
         .stat-value {
             font-size: 2rem;
             font-weight: bold;
             color: var(--mc-gold);
             margin-bottom: 0.5rem;
         }
-        
+
         .stat-label {
             color: #9ca3af;
             font-size: 0.875rem;
         }
-        
+
         .data-source {
             font-size: 0.75rem;
             margin-top: 0.25rem;
         }
-        
+
         .live { color: #10b981; }
         .offline { color: #ef4444; }
-        
+
         /* Sections */
         .section {
             padding: 5rem 0;
         }
-        
+
         .section-alt {
             background-color: #374151;
         }
-        
+
         .section-title {
             text-align: center;
             font-size: 2.5rem;
             color: var(--mc-gold);
             margin-bottom: 3rem;
         }
-        
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .feature-card {
             background-color: #111827;
             border: 4px solid var(--mc-green);
@@ -306,31 +306,31 @@
             transition: all 0.3s;
             text-align: center;
         }
-        
+
         .feature-card:hover {
             border-color: var(--mc-gold);
             transform: scale(1.02);
         }
-        
+
         .feature-icon {
             font-size: 2.5rem;
             color: var(--mc-orange);
             margin-bottom: 1rem;
         }
-        
+
         .feature-title {
             font-size: 1.25rem;
             color: var(--mc-gold);
             margin-bottom: 1rem;
         }
-        
+
         /* Players Section */
         .players-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1rem;
         }
-        
+
         .player-card {
             background-color: #111827;
             border: 2px solid #4b5563;
@@ -341,30 +341,30 @@
             gap: 1rem;
             transition: border-color 0.2s;
         }
-        
+
         .player-card:hover {
             border-color: var(--mc-gold);
         }
-        
+
         .player-avatar {
             width: 32px;
             height: 32px;
             border-radius: 0.25rem;
             image-rendering: pixelated;
         }
-        
+
         /* Rules */
         .rules-list {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .rule-item {
             display: flex;
             gap: 1rem;
             margin-bottom: 2rem;
         }
-        
+
         .rule-number {
             background-color: var(--mc-green);
             color: white;
@@ -377,16 +377,16 @@
             font-weight: bold;
             flex-shrink: 0;
         }
-        
+
         .rule-content h3 {
             color: var(--mc-gold);
             margin-bottom: 0.5rem;
         }
-        
+
         .rule-content p {
             color: #d1d5db;
         }
-        
+
         .alert {
             background-color: var(--mc-dark-green);
             border: 2px solid var(--mc-green);
@@ -397,41 +397,41 @@
             align-items: center;
             gap: 1rem;
         }
-        
+
         /* Contact */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 2rem;
         }
-        
+
         .contact-methods {
             display: flex;
             flex-direction: column;
             gap: 1rem;
         }
-        
+
         .contact-method {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
-        
+
         .contact-method i {
             font-size: 1.5rem;
             width: 30px;
         }
-        
+
         .form-group {
             margin-bottom: 1rem;
         }
-        
+
         .form-label {
             display: block;
             margin-bottom: 0.5rem;
             color: #d1d5db;
         }
-        
+
         .form-input {
             width: 100%;
             padding: 0.75rem;
@@ -441,17 +441,17 @@
             color: white;
             transition: border-color 0.2s;
         }
-        
+
         .form-input:focus {
             outline: none;
             border-color: var(--mc-gold);
         }
-        
+
         .form-textarea {
             resize: none;
             height: 120px;
         }
-        
+
         /* Footer */
         .footer {
             background-color: var(--mc-dark-green);
@@ -459,42 +459,42 @@
             padding: 3rem 0;
             text-align: center;
         }
-        
+
         .footer-title {
             font-size: 1.5rem;
             color: var(--mc-gold);
             margin-bottom: 1rem;
         }
-        
+
         .footer-description {
             color: var(--mc-tan);
             margin-bottom: 1.5rem;
         }
-        
+
         .social-links {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-        
+
         .social-links a {
             color: var(--mc-tan);
             font-size: 1.5rem;
             transition: color 0.2s;
         }
-        
+
         .social-links a:hover {
             color: var(--mc-gold);
         }
-        
+
         .footer-copyright {
             border-top: 1px solid var(--mc-brown);
             padding-top: 1.5rem;
             color: #9ca3af;
             font-size: 0.875rem;
         }
-        
+
         /* Loading */
         .loading {
             display: inline-block;
@@ -505,38 +505,38 @@
             border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
         }
-        
+
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .mobile-menu {
                 display: block;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* Mobile menu */
         .mobile-nav {
             display: none;
@@ -552,11 +552,11 @@
             transform: translateX(100%);
             transition: transform 0.3s;
         }
-        
+
         .mobile-nav.active {
             transform: translateX(0);
         }
-        
+
         .mobile-nav-close {
             position: absolute;
             top: 1rem;
@@ -567,22 +567,22 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
         .mobile-nav-links {
             list-style: none;
             margin-top: 3rem;
         }
-        
+
         .mobile-nav-links li {
             margin-bottom: 1rem;
         }
-        
+
         .mobile-nav-links a {
             color: white;
             text-decoration: none;
             font-size: 1.1rem;
         }
-        
+
         .mobile-overlay {
             display: none;
             position: fixed;
@@ -593,11 +593,11 @@
             background-color: rgba(0,0,0,0.5);
             z-index: 1500;
         }
-        
+
         .mobile-overlay.active {
             display: block;
         }
-        
+
         .toast {
             position: fixed;
             top: 20px;
@@ -611,11 +611,11 @@
             transform: translateX(100%);
             transition: transform 0.3s;
         }
-        
+
         .toast.show {
             transform: translateX(0);
         }
-        
+
         .toast.error {
             background-color: #ef4444;
         }
@@ -636,21 +636,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <ul class="nav-links">
                     <li><a href="#home">Ana Sayfa</a></li>
                     <li><a href="#stats">İstatistikler</a></li>
                     <li><a href="#rules">Kurallar</a></li>
                     <li><a href="#contact">İletişim</a></li>
                 </ul>
-                
+
                 <button class="mobile-menu" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
         </div>
     </header>
-    
+
     <!-- Mobile Menu -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <nav class="mobile-nav" id="mobileNav">
@@ -671,7 +671,7 @@
             <li><a href="#contact">İletişim</a></li>
         </ul>
     </nav>
-    
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
@@ -681,7 +681,7 @@
                     En iyi Minecraft deneyimi için bize katıl!<br>
                     Arkadaşlarınla birlikte eğlenceli anlar yaşa.
                 </p>
-                
+
                 <!-- Server IP Card -->
                 <div class="card server-ip-card">
                     <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -694,7 +694,7 @@
                         <span id="copyText">IP'yi Kopyala</span>
                     </button>
                 </div>
-                
+
                 <!-- Live Stats -->
                 <div class="stats-grid">
                     <div class="stat-card">
@@ -717,7 +717,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Features Section -->
     <section class="section section-alt">
         <div class="container">
@@ -726,7 +726,7 @@
                 <div class="feature-card">
                     <i class="fas fa-hammer feature-icon"></i>
                     <h3 class="feature-title font-pixel">TRAP PVP</h3>
-                    <p>arkadaşların ile hayatta kalma mücadelesi ver!</p>
+                    <p>Klasik trap pvp deneyimi ile hayatta kalma mücadelesi ver!</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-coins feature-icon"></i>
@@ -756,12 +756,12 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Stats Section -->
     <section id="stats" class="section">
         <div class="container">
             <h2 class="section-title font-pixel">Sunucu İstatistikleri</h2>
-            
+
             <div class="stats-grid">
                 <div class="stat-card" style="background: linear-gradient(135deg, var(--mc-green), var(--mc-dark-green));">
                     <i class="fas fa-users stat-icon"></i>
@@ -784,7 +784,7 @@
                     <div class="stat-label" style="color: var(--mc-tan);">Saat Oynanma</div>
                 </div>
             </div>
-            
+
             <!-- Online Players -->
             <div class="card">
                 <h3 class="font-pixel" style="color: var(--mc-gold); margin-bottom: 2rem; text-align: center;">Çevrimiçi Oyuncular</h3>
@@ -797,7 +797,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Rules Section -->
     <section id="rules" class="section section-alt">
         <div class="container">
@@ -838,7 +838,7 @@
                         <p>Yönetici ve moderatör kararlarına saygı gösterin.</p>
                     </div>
                 </div>
-                
+
                 <div class="alert">
                     <i class="fas fa-exclamation-triangle" style="color: var(--mc-tan); font-size: 1.2rem;"></i>
                     <p style="color: var(--mc-tan); margin: 0;">Bu kurallara uymayan oyuncular uyarı, kick veya ban cezası alabilir.</p>
@@ -846,7 +846,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
@@ -885,7 +885,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <h3 class="font-pixel" style="color: var(--mc-gold); margin-bottom: 2rem;">Mesaj Gönder</h3>
                     <form id="contactForm">
@@ -910,38 +910,38 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-title font-pixel">ZeniorCraft</div>
             <p class="footer-description">En iyi Minecraft sunucu deneyimi</p>
-            
+
             <div class="social-links">
                 <a href="#"><i class="fab fa-discord"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            
+
             <div class="footer-copyright">
-                <p>© 2024 ZeniorCraft. Tüm hakları saklıdır. | DEVELOPED BY: @celo58 </p>
+                <p>© 2024 ZeniorCraft. Tüm hakları saklıdır. |DEVELOIPED BY: @celo58</p>
             </div>
         </div>
     </footer>
-    
+
     <!-- Toast Notification -->
     <div class="toast" id="toast"></div>
-    
+
     <script>
         // Configuration
         const SERVER_IP = 'oyna.zeniorcraft.xyz';
         const SERVER_PORT = 25565;
-        
+
         // State
         let serverStats = null;
         let onlinePlayers = [];
-        
+
         // DOM Elements
         const elements = {
             // Status indicators
@@ -951,7 +951,7 @@
             mobileStatusIndicator: document.getElementById('mobileStatusIndicator'),
             mobileStatusText: document.getElementById('mobileStatusText'),
             mobileDataSource: document.getElementById('mobileDataSource'),
-            
+
             // Stats
             playerCount: document.getElementById('playerCount'),
             maxPlayers: document.getElementById('maxPlayers'),
@@ -961,10 +961,10 @@
             blocksPlaced: document.getElementById('blocksPlaced'),
             serverAge: document.getElementById('serverAge'),
             totalPlaytime: document.getElementById('totalPlaytime'),
-            
+
             // Players
             playersGrid: document.getElementById('playersGrid'),
-            
+
             // UI
             copyBtn: document.getElementById('copyBtn'),
             copyText: document.getElementById('copyText'),
@@ -977,7 +977,7 @@
             submitText: document.getElementById('submitText'),
             toast: document.getElementById('toast')
         };
-        
+
         // Fetch real server data from API
         async function fetchServerStats() {
             try {
@@ -985,23 +985,26 @@
                 if (!response.ok) {
                     throw new Error('API request failed');
                 }
-                return await response.json();
+                const data = await response.json();
+                console.log('API Response:', data);
+                return data;
             } catch (error) {
                 console.error('Error fetching server stats:', error);
+                // Return minimal error state without fake data
                 return {
                     isOnline: false,
-                    playerCount: 16,
+                    playerCount: 0,
                     maxPlayers: 70,
-                    uptime: "99.9%",
-                    totalPlayers: 17,
+                    uptime: "0%",
+                    totalPlayers: 0,
                     blocksPlaced: 0,
                     serverAge: 0,
-                    totalPlaytime: 9278,
+                    totalPlaytime: 0,
                     dataSource: "error"
                 };
             }
         }
-        
+
         // Get mock server stats
         function getMockServerStats() {
             return {
@@ -1012,7 +1015,7 @@
                 uptime: "99.8%"
             };
         }
-        
+
         // Generate mock online players
         function generateMockPlayers(count) {
             const playerNames = [
@@ -1020,12 +1023,12 @@
                 'GoldMiner', 'RedstoneWiz', 'BuildMaster', 'PvPKing', 'Farmer123',
                 'Explorer456', 'CraftLord', 'BlockBreaker', 'SurvivalPro', 'Miner789'
             ];
-            
+
             const colors = [
                 '#8B4513', '#2563eb', '#16a34a', '#7c3aed', '#dc2626',
                 '#ca8a04', '#ea580c', '#0891b2', '#be123c', '#7c2d12'
             ];
-            
+
             const players = [];
             for (let i = 0; i < count && i < playerNames.length; i++) {
                 players.push({
@@ -1036,20 +1039,20 @@
             }
             return players;
         }
-        
+
         // Update server status display
         function updateServerStatus(stats) {
             const isOnline = stats && stats.isOnline;
             const dataSourceText = stats && stats.dataSource === 'live' ? 'Canlı Veri' : 'Simülasyon';
             const dataSourceClass = stats && stats.dataSource === 'live' ? 'live' : 'offline';
-            
+
             // Desktop status
             elements.statusIndicator.className = `status-indicator ${isOnline ? 'status-online' : 'status-offline'}`;
             elements.statusText.textContent = isOnline ? 'Çevrimiçi' : 'Çevrimdışı';
             elements.statusText.className = isOnline ? 'live' : 'offline';
             elements.dataSource.textContent = dataSourceText;
             elements.dataSource.className = dataSourceClass;
-            
+
             // Mobile status
             elements.mobileStatusIndicator.className = `status-indicator ${isOnline ? 'status-online' : 'status-offline'}`;
             elements.mobileStatusText.textContent = isOnline ? 'Çevrimiçi' : 'Çevrimdışı';
@@ -1057,27 +1060,27 @@
             elements.mobileDataSource.textContent = dataSourceText;
             elements.mobileDataSource.className = dataSourceClass;
         }
-        
+
         // Update stats display
         function updateStats(stats) {
             if (!stats) return;
-            
+
             elements.playerCount.textContent = stats.playerCount || 0;
             elements.maxPlayers.textContent = stats.maxPlayers || 70;
             elements.uptime.textContent = stats.uptime || "0%";
-            
+
             if (stats.dataSource) {
                 elements.playerCountSource.textContent = stats.dataSource === 'live' ? '● Canlı' : '● Simülasyon';
                 elements.playerCountSource.className = `data-source ${stats.dataSource === 'live' ? 'live' : 'offline'}`;
             }
-            
+
             // Extended stats
             elements.totalPlayers.textContent = (stats.totalPlayers || 0).toLocaleString();
             elements.blocksPlaced.textContent = (stats.blocksPlaced || 0).toLocaleString();
             elements.serverAge.textContent = stats.serverAge || 0;
             elements.totalPlaytime.textContent = (stats.totalPlaytime || 0).toLocaleString();
         }
-        
+
         // Update online players display
         function updateOnlinePlayers(players) {
             if (!players || players.length === 0) {
@@ -1088,7 +1091,7 @@
                 `;
                 return;
             }
-            
+
             elements.playersGrid.innerHTML = players.map(player => `
                 <div class="player-card">
                     <div class="player-avatar" style="background-color: ${player.avatarColor};"></div>
@@ -1098,20 +1101,20 @@
                 </div>
             `).join('');
         }
-        
+
         // Fetch server data
         async function fetchServerData() {
             try {
                 serverStats = await fetchServerStats();
                 onlinePlayers = generateMockPlayers(serverStats.playerCount || 0);
-                
+
                 updateServerStatus(serverStats);
                 updateStats(serverStats);
                 updateOnlinePlayers(onlinePlayers);
-                
+
             } catch (error) {
                 console.error('Error fetching server data:', error);
-                
+
                 serverStats = {
                     isOnline: false,
                     playerCount: 0,
@@ -1123,25 +1126,25 @@
                     totalPlaytime: 0,
                     dataSource: 'error'
                 };
-                
+
                 onlinePlayers = [];
-                
+
                 updateServerStatus(serverStats);
                 updateStats(serverStats);
                 updateOnlinePlayers(onlinePlayers);
             }
         }
-        
+
         // Show toast notification
         function showToast(message, isError = false) {
             elements.toast.textContent = message;
             elements.toast.className = `toast ${isError ? 'error' : ''} show`;
-            
+
             setTimeout(() => {
                 elements.toast.classList.remove('show');
             }, 3000);
         }
-        
+
         // Copy server IP to clipboard
         async function copyServerIP() {
             try {
@@ -1149,9 +1152,9 @@
                 elements.copyText.textContent = 'Kopyalandı!';
                 elements.copyBtn.innerHTML = '<i class="fas fa-check"></i><span>Kopyalandı!</span>';
                 elements.copyBtn.disabled = true;
-                
+
                 showToast('Sunucu IP\'si panoya kopyalandı!');
-                
+
                 setTimeout(() => {
                     elements.copyText.textContent = 'IP\'yi Kopyala';
                     elements.copyBtn.innerHTML = '<i class="fas fa-copy"></i><span>IP\'yi Kopyala</span>';
@@ -1161,7 +1164,7 @@
                 showToast('IP kopyalanırken bir hata oluştu.', true);
             }
         }
-        
+
         // Smooth scroll to section
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId.replace('#', ''));
@@ -1172,40 +1175,40 @@
                 });
             }
         }
-        
+
         // Toggle mobile menu
         function toggleMobileMenu() {
             elements.mobileNav.classList.toggle('active');
             elements.mobileOverlay.classList.toggle('active');
         }
-        
+
         // Handle contact form submission
         async function handleContactForm(event) {
             event.preventDefault();
-            
+
             const name = document.getElementById('contactName').value;
             const email = document.getElementById('contactEmail').value;
             const message = document.getElementById('contactMessage').value;
-            
+
             if (!name || !email || !message) {
                 showToast('Lütfen tüm alanları doldurun.', true);
                 return;
             }
-            
+
             elements.submitBtn.disabled = true;
             elements.submitText.textContent = 'Gönderiliyor...';
-            
+
             try {
                 // Simulate form submission
                 await new Promise(resolve => setTimeout(resolve, 1000));
-                
+
                 showToast('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.');
-                
+
                 // Clear form
                 document.getElementById('contactName').value = '';
                 document.getElementById('contactEmail').value = '';
                 document.getElementById('contactMessage').value = '';
-                
+
             } catch (error) {
                 showToast('Mesaj gönderilirken bir hata oluştu.', true);
             } finally {
@@ -1213,39 +1216,39 @@
                 elements.submitText.textContent = 'Mesaj Gönder';
             }
         }
-        
+
         // Event listeners
         document.addEventListener('DOMContentLoaded', function() {
             // Initial data fetch
             fetchServerData();
-            
+
             // Periodic updates
             setInterval(fetchServerData, 30000); // Update every 30 seconds
-            
+
             // Copy button
             elements.copyBtn.addEventListener('click', copyServerIP);
-            
+
             // Mobile menu
             elements.mobileMenuBtn.addEventListener('click', toggleMobileMenu);
             elements.mobileNavClose.addEventListener('click', toggleMobileMenu);
             elements.mobileOverlay.addEventListener('click', toggleMobileMenu);
-            
+
             // Navigation links
             document.addEventListener('click', function(e) {
                 if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
                     e.preventDefault();
                     scrollToSection(e.target.getAttribute('href'));
-                    
+
                     // Close mobile menu if open
                     if (elements.mobileNav.classList.contains('active')) {
                         toggleMobileMenu();
                     }
                 }
             });
-            
+
             // Contact form
             elements.contactForm.addEventListener('submit', handleContactForm);
-            
+
             // Scroll effect for header
             let lastScrollY = window.scrollY;
             window.addEventListener('scroll', function() {
@@ -1258,7 +1261,7 @@
                 lastScrollY = window.scrollY;
             });
         });
-        
+
         // Handle page visibility change to pause/resume updates
         document.addEventListener('visibilitychange', function() {
             if (document.hidden) {
